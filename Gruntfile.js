@@ -6,6 +6,9 @@ module.exports = function (grunt) {
         copy: {
             main: {
                 files: [
+                    {expand: true, cwd: 'bower_components/jquery/dist/', src: ['jquery.js'], dest: 'js/'},
+                    {expand: true, cwd: 'bower_components/jquery-ui/', src: ['jquery-ui.js'], dest: 'js'},
+                    {expand: true, cwd: 'bower_components/angular-ui-sortable/', src: ['sortable.js'], dest: 'js'},
                     {expand: true, cwd: 'bower_components/angular/', src: ['angular.js'], dest: 'js/'},
                     {expand: true, cwd: 'bower_components/angular-ckeditor/', src: ['angular-ckeditor.js'], dest: 'js/'},
                     {expand: true, cwd: 'bower_components/angular-ui-router/release/', src: ['angular-ui-router.js'], dest: 'js/'},

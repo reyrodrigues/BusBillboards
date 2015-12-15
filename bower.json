@@ -21,6 +21,9 @@
     "angular-ui-router": "~0.2.15",
     "moment": "~2.10.6",
     "angular-ckeditor": "~1.0.0",
-    "ckeditor": "~4.5.5"
+    "ckeditor": "~4.5.5",
+    "jquery": "~2.1.4",
+    "jquery-ui": "~1.11.4",
+    "angular-ui-sortable": "~0.13.4"
   }
 }
