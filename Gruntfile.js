@@ -23,6 +23,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
 
     // Default task(s).
-    grunt.registerTask('default', ['copy:main']);
+    grunt.registerTask('dokku:production', ['copy:main']);
 
 };
