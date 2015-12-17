@@ -4,7 +4,9 @@
   "description": "Very simple app to show texts and a color",
   "main": "Gruntfile.js",
   "dependencies": {
+    "bower": "^1.7.1",
     "grunt": "^0.4.5",
+    "grunt-bower-task": "^0.4.0",
     "grunt-contrib-copy": "^0.8.2"
   },
   "devDependencies": {},
