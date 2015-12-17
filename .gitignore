@@ -1,3 +1,9 @@
 bower_components/
 node_modules/
 js/
+board/static/js/
+.v/
+*.py[0c]
+db.sqlite3
+*.zip
+.idea
