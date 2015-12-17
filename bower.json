@@ -24,6 +24,15 @@
     "ckeditor": "~4.5.5",
     "jquery": "~2.1.4",
     "jquery-ui": "~1.11.4",
-    "angular-ui-sortable": "~0.13.4"
+    "angular-ui-sortable": "~0.13.4",
+    "materialize": "~0.97.3"
+  },
+  "exportsOverride": {
+    "moment": {
+      "": "min/moment-with-locales.js"
+    },
+    "materialize": {
+      "": "dist/**/*.*"
+    }
   }
 }

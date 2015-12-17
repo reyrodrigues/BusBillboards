@@ -1,7 +1,7 @@
 bower_components/
 node_modules/
 js/
-board/static/js/
+board/static/bower/
 .v/
 *.py[0c]
 db.sqlite3
