@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'djangobower',
 
     'board',
 ]
@@ -119,6 +120,21 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
+
+STATICFILES_FINDERS = [
+    'djangobower.finders.BowerFinder',
+]
+BOWER_COMPONENTS_ROOT = os.path.join(BASE_DIR, 'components')
+BOWER_INSTALLED_APPS = (
+    "angular",
+    "angular-ui-router",
+    "moment",
+    "angular-ckeditor",
+    "ckeditor",
+    "jquery",
+    "jquery-ui",
+    "angular-ui-sortable",
+)
 
 STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'

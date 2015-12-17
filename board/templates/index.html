@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html ng-app="BusBoard">
 
@@ -5,14 +6,14 @@
 <title>{{ title }}</title>
 <meta charset="UTF-8">
 
-<script src="/static/js/jquery.js"></script>
-<script src="/static/js/jquery-ui.js"></script>
-<script src="/static/js/angular.js"></script>
-<script src="/static/js/angular-ui-router.js"></script>
-<script src="/static/js/moment-with-locales.js"></script>
-<script src="/static/js/ckeditor/ckeditor.js"></script>
-<script src="/static/js/angular-ckeditor.js"></script>
-<script src="/static/js/sortable.js"></script>
+
+<script type="text/javascript" src='{% static 'jquery/dist/jquery.js' %}'></script>
+<script type="text/javascript" src='{% static 'jquery-ui/dist/jquery-ui.js' %}'></script>
+
+<script type="text/javascript" src='{% static 'angular/angular.js' %}'></script>
+<script type="text/javascript" src='{% static 'angular-ui-router/release/angular-ui-router.js' %}'></script>
+<script type="text/javascript" src='{% static 'angular-ui-sortable/sortable.js' %}'></script>
+<script type="text/javascript" src='{% static 'moment/moment.js' %}'></script>
 
 <style>
     html,
@@ -208,7 +209,6 @@
     }
 </style>
 <script>
-CKEDITOR.config.autoParagraph = false;
 
 function removeHashkey(a) {
     delete a['$$hashKey'];
@@ -217,7 +217,7 @@ function removeHashkey(a) {
 
 
 angular
-        .module('BusBoard', ['ui.router', 'ckeditor', 'ui.sortable'])
+        .module('BusBoard', ['ui.router', 'ui.sortable'])
         .config(function ($stateProvider, $urlRouterProvider) {
             $urlRouterProvider.otherwise("/colors");
 
