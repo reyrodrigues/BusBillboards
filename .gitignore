@@ -7,3 +7,4 @@ board/static/js/
 db.sqlite3
 *.zip
 .idea
+lib/
